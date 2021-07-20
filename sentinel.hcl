@@ -16,7 +16,7 @@ module "aws-functions" {
   
 policy "enforce-mandatory-tags" {
   source            = "https://raw.githubusercontent.com/FrequencyUnk/terraform-guides/master/governance/third-generation/aws/enforce-mandatory-tags.sentinel"
-  enforcement_level = "hard-mandatory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "less-than-100-month" {
